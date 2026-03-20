@@ -112,3 +112,47 @@
    console.log(numbersArr.indexOf(2));
    console.log(fruits.includes("Яблоко"));
    console.log(fruit.includes("Манго"));
+
+
+   let user2 = {
+
+       name: "Ivan",
+       age: 20,
+       isStudent: true,
+       sayHello: function() {
+           console.log('Hello,my name is ${name}');
+       },
+
+
+
+   };
+   user2.sayHello();
+
+
+   console.log(user2.name);
+   console.log(user2.age);
+   console.log(user2["name"]);
+
+   user2.age = 30;
+   user2.name = "Кирилл";
+   delete user2.isStudent;
+   console.log(user2);
+
+
+
+   for (let key in user2) {
+       console.log(key + ":" + user2[key]);
+   }
+
+   let student = {
+       name: "Григорий",
+       skills: ["HTML", "CSS", "JS"
+
+       ],
+       address: {
+           city: "Волжский",
+           street: "Пушкина",
+       },
+   };
+   console.log(student.skills[0]);
+   console.log(student.address.city);
